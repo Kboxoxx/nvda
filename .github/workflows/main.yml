@@ -1,0 +1,20 @@
+            - Name: .NET Core SDK einrichten
+  verwendet: actions/setup-dotnet@v4.3.1
+  mit:
+    # Optionale SDK-Version(en). Falls nicht angegeben, wird die global.json-Version installiert, sobald sie verfügbar ist. Beispiele: 2.2.104, 3.1, 3.1.x, 3.x, 6.0.2xx
+    dotnet-version: # optional
+    # Optionale Qualität des Builds. Mögliche Werte sind: täglich, signiert, validiert, Vorschau, ga.
+    dotnet-quality: # optional
+    # Optionaler global.json-Speicherort, wenn sich Ihr global.json nicht im Stammverzeichnis des Repo befindet.
+    global-json-file: # optional
+    # Optionale Paketquelle, für die die Authentifizierung eingerichtet werden soll. Konsultiert alle vorhandenen NuGet.config im Stammverzeichnis des Repositorys und stellt eine temporäre NuGet.config bereit, die die Umgebungsvariable NUGET_AUTH_TOKEN als ClearTextPassword verwendet.
+    Quell-URL: # optional
+    # Optionaler EIGENTÜMER für die Verwendung von Paketen von GitHub Package Registry-Organisationen/-Benutzern, die nicht der Eigentümer des aktuellen Repositorys sind. Wird nur verwendet, wenn in der Quell-URL auch eine GPR-URL angegeben ist.
+    Besitzer: # optional
+    # Optionaler NuGet.config-Speicherort, wenn sich Ihre NuGet.config nicht im Stammverzeichnis des Repository befindet.
+    Konfigurationsdatei: # optional
+    # Optionale Eingabe zum Aktivieren des Caching des NuGet-Ordners „global-packages“
+    Cache: # optional
+    # Wird verwendet, um den Pfad zu einer Abhängigkeitsdatei anzugeben: packages.lock.json. Unterstützt Platzhalter oder eine Liste von Dateinamen zum Zwischenspeichern mehrerer Abhängigkeiten.
+    Cache-Abhängigkeitspfad: # optional
+          
